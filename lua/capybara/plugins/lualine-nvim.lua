@@ -1,5 +1,6 @@
 return {
   "nvim-lualine/lualine.nvim",
+  dependencies = { 'nvim-tree/nvim-web-devicons' },
   config = function()
     local custom_gruvbox = require'lualine.themes.gruvbox_dark' 
 
@@ -17,6 +18,7 @@ return {
         lualine_y = {'progress'},
         lualine_z = {'location'},
       },
+      disabled_filetypes = {'NVimTree'}
     })
   end,
 }
